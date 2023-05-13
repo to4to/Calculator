@@ -7,13 +7,9 @@ const clear=document.querySelector("#btn-clear");
 
 buttons.forEach(button=>{
 button.addEventListener('click',(e)=>{
-
-
     //console.log(e.target.innerHTML);
 
 screen.value+=e.target.innerHTML;
-
-
 })
 
 equals.addEventListener('click',(e)=>{
@@ -22,15 +18,9 @@ equals.addEventListener('click',(e)=>{
         screen.value="Enter Value"
     }else{
         screen.value=eval(screen.value);
-
-
     }
-
 })
-
 })
-
-
 
     clear.addEventListener('click',()=>{
         screen.value="";
